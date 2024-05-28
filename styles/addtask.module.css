@@ -1,0 +1,16 @@
+.addtask {
+  height: 250px;
+  width: 250px;
+  border: 1px solid #5c625b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #11121086;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.plus {
+  font-size: 2rem;
+}

@@ -1,0 +1,55 @@
+.modal {
+  position: fixed;
+  margin: 15px auto; /* Only centers horizontally not vertically! */
+  left: 0;
+  right: 0;
+  width: 60%;
+  height: 90%;
+  background-color: #2a2a2ace;
+  border-radius: 25px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal h1 {
+  padding: 0 0 55px 0;
+}
+
+.modal form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal textarea {
+  resize: none;
+}
+
+.zonebtn {
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.btn {
+  width: 180px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  margin: 5px;
+}
+
+.close {
+  background-color: rgb(255, 0, 0);
+}
+
+.validate {
+  background-color: #1100fc;
+  color: white;
+}

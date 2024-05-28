@@ -1,0 +1,15 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0 25px;
+  max-width: 80%;
+}
+
+@media (max-width: 858px) {
+  .main {
+    max-width: 100%;
+  }
+}

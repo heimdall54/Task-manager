@@ -1,0 +1,161 @@
+.nav {
+  width: 20%;
+  height: 100vh;
+  background-color: #2f312e;
+  box-shadow: 1px 1px 5px #2f312e75;
+  color: #eceeec;
+}
+
+.nav .header {
+  width: 100%;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.nav .header img {
+  border-radius: 50%;
+  margin: 10px 0;
+}
+
+.nav .header h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.login {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.lien {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.lien a {
+  text-decoration: none;
+  color: #eceeec;
+  font-size: 1.2rem;
+  padding: 10px 0;
+}
+
+.authbtn {
+  padding: 8px 10px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px #eceeec79;
+  cursor: pointer;
+  background-color: #eceeec;
+  color: #2f312e;
+  transition: all 0.5s;
+}
+
+.authbtn:hover {
+  padding: 8.5px 10.5px;
+}
+
+.test {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  width: 50px;
+  height: 26px;
+  border-radius: 25px;
+  border: 1px solid #eceeec;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-label {
+  background-color: #111;
+  width: 50px;
+  height: 26px;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.famoon {
+  color: #f1c40f;
+  margin-top: 3px;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.fasun {
+  color: #f39c12;
+  margin-top: 3px;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.checkboxlabel .ball {
+  background-color: #fff;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .checkboxlabel .ball {
+  transform: translateX(24px);
+}
+
+.checkbtn {
+  position: fixed;
+  right: 5px;
+  top: 5px;
+  display: none;
+  z-index: 1000;
+  font-size: 2rem;
+  color: #eceeec;
+}
+
+.checkboxbtn {
+  display: none;
+}
+
+@media (max-width: 858px) {
+  .nav {
+    position: fixed;
+    width: 100%;
+    left: -100%;
+    transition: all 0.5s;
+  }
+
+  .checkbtn {
+    display: block;
+  }
+
+  .checkboxbtn:checked ~ .nav {
+    left: 0;
+  }
+}
