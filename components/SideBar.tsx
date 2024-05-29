@@ -44,10 +44,8 @@ export async function SideBar() {
                   id="checkbox"
                 />
                 <label htmlFor="checkbox" className={styles.checkboxlabel}>
-                  <MdOutlineWbSunny className={styles.famoon} />
-
                   <FaMoon className={styles.fasun} />
-
+                  <MdOutlineWbSunny className={styles.famoon} />
                   <span className={styles.ball}></span>
                 </label>
               </div>

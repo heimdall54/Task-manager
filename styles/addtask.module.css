@@ -1,16 +1,37 @@
-.addtask {
+/* all elemenet */
+.content {
   height: 250px;
   width: 250px;
   border: 1px solid #5c625b;
+  background-color: #11121086;
+  margin: 5px;
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #11121086;
-  margin: 5px;
-  cursor: pointer;
+}
+
+/* add task  */
+.addtask {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .plus {
   font-size: 2rem;
+}
+
+/* task element */
+.task {
+}
+
+.task p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 70%;
+  max-height: 40%;
+  font-size: 1rem;
 }

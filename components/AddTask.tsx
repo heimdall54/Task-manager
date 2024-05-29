@@ -6,7 +6,7 @@ import { BsPlusLg } from "react-icons/bs";
 
 export const AddTask = () => {
   return (
-    <Link href="?modal=true" className={styles.addtask}>
+    <Link href="?modal=true" className={styles.content +" "+styles.addtask}>
       <h3>Nouvelle task</h3>
       <BsPlusLg className={styles.plus} />
     </Link>
